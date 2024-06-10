@@ -14,7 +14,7 @@ const SearchResults = ({ inputText, setInputText }) => {
     useEffect(() => {
         if (inputText && inputText.length > 2) {
             const getData = setTimeout(() => {
-                const apiUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${inputText}&appid=${import.meta.env.VITE_OPENWEATHER_API_KEY}&limit=5`
+                const apiUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${inputText}&appid=${import.meta.env.VITE_OPENWEATHER_API_KEY}&limit=5`
                 fetchLocations(apiUrl)
                     .then((res) => {
                         setLocationList(res);

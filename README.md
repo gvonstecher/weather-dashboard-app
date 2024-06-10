@@ -30,8 +30,8 @@ This Weather Dashboard Application provides users with up-to-date weather inform
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/gvonstecher/weather-app.git
-    cd weather-dashboard
+    git clone https://github.com/gvonstecher/weather-dashboard-app.git
+    cd weather-dashboard-app
     ```
 
 2. **Install Dependencies**:

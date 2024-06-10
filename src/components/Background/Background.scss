@@ -1,0 +1,87 @@
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: background-image 300ms;
+    z-index: -2;
+    background-position: center center;
+    background-size: cover;
+    background-image: url('backgrounds/nodata.png');
+
+    &--blurred{
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 36vw;
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        z-index: -1;
+        border-left:5px solid rgb(255,255,255,0.1);
+    }
+
+    &.background--cloud{
+        background-image: url('backgrounds/cloud.png');
+    }
+
+    &.background--night-cloud{
+        background-image: url('backgrounds/night-cloud.png');
+    }
+
+    &.background--clear{
+        background-image: url('backgrounds/clear.png');
+    }
+
+    &.background--night-clear{
+        background-image: url('backgrounds/night-clear.png');
+    }
+
+    &.background--mist{
+        background-image: url('backgrounds/mist.png');
+    }
+
+    &.background--rain{
+        background-image: url('backgrounds/rain.png');
+    }
+
+    &.background--snow{
+        background-image: url('backgrounds/snow.png');
+    }
+
+    &.background--thunderstorm{
+        background-image: url('backgrounds/thunderstorm.png');
+    }  
+}
+
+.theme--dark{
+    .background{
+        background-image: url('backgrounds/nodata-white.png');
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .background{
+        &--blurred{
+            right: 0;
+            left: 0;
+            top: initial;
+            bottom: 0;
+            width: 100vw;
+            height: 55vh;
+            border: 0;
+            border-top:5px solid rgb(255,255,255,0.1);
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .background{
+        &--blurred{
+            height: 60vh;
+        }
+    }
+}

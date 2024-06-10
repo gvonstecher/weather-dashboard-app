@@ -1,0 +1,42 @@
+.icon{
+    i{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    img{
+        width: 100%;
+        height: auto;;
+    }
+
+    &__search{
+        background-image: url(/icons/search.svg);
+    }
+    &__temperature-max{
+        background-image: url(/icons/temperature-max.svg);
+    }
+    &__temperature-min{
+        background-image: url(/icons/temperature-min.svg);
+    }
+    &__humidity{
+        background-image: url(/icons/humidity.svg);
+    }
+    &__clouds{
+        background-image: url(/icons/clouds.svg);
+    }
+    &__winds{
+        background-image: url(/icons/winds.svg);
+    }
+
+    &__add{
+        background-image: url(/icons/star.svg);
+
+        &--added{
+            background-image: url(/icons/star-filled.svg);
+        }
+    }
+}

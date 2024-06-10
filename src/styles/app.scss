@@ -1,0 +1,144 @@
+//Main Styles & Normalize
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("./variables.scss");
+body{
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+    margin: 0;
+    padding: 0
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color__text);
+
+    &__wrapper {
+        width: 100vw;
+        max-width: 1204px;
+        height: calc(100vh - 30px);
+        padding-top:30px;
+        display: flex;
+        flex-direction: column;
+    } 
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &__logo {
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.main{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-grow: 1;
+    height: 100%;
+  
+}
+
+.weather-information{
+    width: 372px;
+    margin-right: 4px;
+    height: 100%;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+    overflow-y: scroll;
+    &::-webkit-scrollbar { 
+        display: none; 
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+    .page {
+        font-size: 16px;
+        &__wrapper {
+            width: 90vw;
+            height: calc(100vh - 15px);
+            padding-top:16px;
+            justify-content: space-between;
+        }
+    }
+
+    .header{
+        &__logo{
+            img{
+                width: 11vw;
+                height: auto;
+            }
+        }
+    }
+
+    .main{
+        flex-direction: column;
+        flex-grow: initial;
+        height: 77vh;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .weather-information{
+        height: 75%;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .page {
+        font-size: 14px;
+        &__wrapper {
+            width: 88vw;
+            height: calc(100vh - 18px);
+            padding-top: 18px;
+        }
+    }
+
+    .header{
+        &__logo{
+            img{
+                width: 11vw;
+                height: auto;
+            }
+        }
+    }
+
+    .weather-information{
+        width: 90%;
+        margin-right: -10px;
+
+        &__description{
+            margin-top: 35px;
+            margin-bottom: 30px;
+        }
+
+        &__row{
+            margin: 31px 0px;
+
+            &__icon{
+                width: 23px;
+                height: 19px;
+                margin: 0px 6px;
+            }
+        }
+    }
+}

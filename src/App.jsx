@@ -96,7 +96,7 @@ function App() {
                 <div className='page'>
                     <div className='page__wrapper'>
                         <header className='header'>
-                            <div className='header__logo'><img src='./appLogo.png' alt='weather web' /></div>
+                            <div className='header__logo'><img src='./assets/appLogo.png' alt='weather web' /></div>
                             <SearchBar />
                         </header>
                         <main className='main'>

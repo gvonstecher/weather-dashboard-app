@@ -18,7 +18,7 @@ const Background = () => {
         //Only when image is loaded I change background-class
         //Why? use classes? To make use of css transitions!
         const img = new Image();
-        img.src = `/backgrounds/${background}.png`;
+        img.src = `/assets/backgrounds/${background}.png`;
         img.onload = async () => setBackgroundClass(background);
     }, [weatherData] ) //only do that when weather data changes, of course
 

@@ -9,6 +9,10 @@ const FavoritesAdd = () => {
     //TODO: check is location is already in favorite locations. in that case, useState should be true;
     const [isFavorited, setIsFavorited] = useState(false);
 
+    useEffect(() => {
+        setIsFavorited(false);
+    },[weatherData])
+
     const handleToggleFavorite = () => {
         const existingFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
         let updatedFavorites;

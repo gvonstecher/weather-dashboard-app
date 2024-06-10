@@ -71,7 +71,7 @@ function App() {
         const [theme, setTheme] = useState(() => {
             // I get previous localStorage value when initialized
             const savedTheme = localStorage.getItem('theme');
-            return savedTheme ? JSON.parse(savedTheme) : 'theme--light';
+            return savedTheme ? JSON.parse(savedTheme) : 'theme--darkt';
         });
 
         useEffect(() => {
@@ -81,7 +81,7 @@ function App() {
         }, [theme]);
 
         const toggleTheme = () => {
-            setTheme((prevTheme) => (prevTheme === 'theme--light' ? 'theme--dark' : 'theme--light'));
+            setTheme((prevTheme) => (prevTheme === 'theme--dark' ? 'theme--light' : 'theme--dark'));
         };
 
 

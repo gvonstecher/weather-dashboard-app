@@ -14,29 +14,29 @@
     }
 
     &__search{
-        background-image: url('./assets/icons/search.svg');
+        background-image: url(/icons/search.svg);
     }
     &__temperature-max{
-        background-image: url('./assets/icons/temperature-max.svg');
+        background-image: url(/icons/temperature-max.svg);
     }
     &__temperature-min{
-        background-image: url('./assets/icons/temperature-min.svg');
+        background-image: url(/icons/temperature-min.svg);
     }
     &__humidity{
-        background-image: url('./assets/icons/humidity.svg');
+        background-image: url(/icons/humidity.svg);
     }
     &__clouds{
-        background-image: url('./assets/icons/clouds.svg');
+        background-image: url(/icons/clouds.svg);
     }
     &__winds{
-        background-image: url('./assets/icons/winds.svg');
+        background-image: url(/icons/winds.svg);
     }
 
     &__add{
-        background-image: url('./assets/icons/star.svg');
+        background-image: url(/icons/star.svg);
 
         &--added{
-            background-image: url('./assets/icons/star-filled.svg');
+            background-image: url(/icons/star-filled.svg);
         }
     }
 }
